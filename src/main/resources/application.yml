@@ -19,3 +19,5 @@ spring:
             uri: lb://RATING-SERVICE
             predicates:
               - Path=/ratings/**
+  config:
+    import: optional:configserver:http://localhost:8086
